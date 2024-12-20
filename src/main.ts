@@ -10,4 +10,7 @@ lovr.keypressed = (key: KeyCode) => {
   if (key == "escape") {
     lovr.event.quit()
   }
+
+  // Hey, while you're in here, try doing a different
+  // key pressed check like I did above and watch the autocomplete. :)
 }
