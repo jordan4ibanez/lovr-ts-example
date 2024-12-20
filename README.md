@@ -60,7 +60,7 @@ It's very easy. See the TSTL website for a basic ``tsconfig.json`` configuration
 You simply create that ``tsconfig.json`` file in the root of your project and you next have to tell it where to add in the types. You should already have a blank ``"types": [],`` array which you can plop them in:
 
 ```json
-# This is the base of the JSON table.
+// This is the base of the JSON table.
 {
   "compilerOptions": {
     "types": [
@@ -75,7 +75,7 @@ You simply create that ``tsconfig.json`` file in the root of your project and yo
 While you're in there, add these parts into the ``tstl`` section:
 
 ```json
-# This is the base of the JSON table.
+// This is the base of the JSON table.
 {
   "tstl": {
     // LOVR uses LuaJIT cause it's fast as heck!
@@ -95,6 +95,7 @@ I have one last thing that I recommend you do in that ``tsconfig.json`` file. Bu
 
 Add these two parts into the ``compilerOptions`` section:
 ```json
+// This is the base of the JSON table.
 {
   "compilerOptions": {
     "rootDir": "src/",
