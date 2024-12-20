@@ -1,0 +1,22 @@
+{
+  "name": "lovr-ts-example",
+  "version": "1.0.0",
+  "description": "A sample of how to use TSTL to make LOVR games.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "lovr",
+    "game",
+    "example",
+    "thing",
+    "typescript"
+  ],
+  "author": "jordan4ibanez",
+  "license": "MIT",
+  "devDependencies": {
+    "lovr-api": "^1.0.2",
+    "typescript": "^5.7.2",
+    "typescript-to-lua": "^1.28.1"
+  }
+}

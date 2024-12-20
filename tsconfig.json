@@ -1,0 +1,28 @@
+{
+  "$schema": "https://raw.githubusercontent.com/TypeScriptToLua/TypeScriptToLua/master/tsconfig-schema.json",
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": [
+      "ESNext"
+    ],
+    "moduleResolution": "Node",
+    "types": [
+      "lua-types/jit",
+      "lovr-api/lovr-api",
+    ],
+    "strict": true,
+    "rootDir": "src/",
+    "outDir": "out/",
+  },
+  "tstl": {
+    // LOVR uses LuaJIT cause it's fast as heck!
+    "luaTarget": "JIT",
+    "luaPlugins": [],
+    // I highly recommend you do this so you don't get globals all over the place!
+    "noImplicitGlobalVariables": true,
+    // This allows you to actually detect where your source code blows up in typescript.
+    "sourceMapTraceback": true,
+    // This prevents A LOT of annoying things.
+    "noImplicitSelf": true
+  }
+}
