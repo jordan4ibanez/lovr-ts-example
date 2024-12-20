@@ -41,7 +41,7 @@ You can make the basic folder layout. ``src/`` is what I stick to. Then you can 
 
 Then you can layout the bin folder how you want. Maybe you don't even want a bin folder, you could just drop the binary straight into the root of your project if you feel like it. Do what you like!
 
-As for this tutorial, I set it up as a developer that wants to test across different OSes easy. I literally unzipped the AppImage from the lovr website and left it like that lol.
+As for this tutorial, I set it up as a developer that wants to test across different OSes easily or wants to recompile constantly without the hot reload (for now). I literally unzipped the AppImage from the lovr website and left it like that lol.
 
 Okay so next is the important part. I'm assuming you installed NPM at this point (lol). Run this in the root of your project:
 
@@ -120,6 +120,8 @@ default:
 which basically allows you to run ``make`` and it will rebuild your changes and run your project automatically.
 
 One more thing, before you upload your code to github. Make sure you ``.gitignore`` the node_modules folder. You do not want that mess in your repo. :D
+
+I also set a ``.gitignore`` for the ``out/`` folder. This is so it does not clutter my github gui change updater. You don't have to do that if you don't want to.
 
 So now you should be able to run this project with 2 simple commands:
 
